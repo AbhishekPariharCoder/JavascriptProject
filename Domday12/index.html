@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Move Image with Keyboard</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+    #container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      border: 2px solid #000;
+      background-color: #fff;
+      overflow: hidden;
+    }
+    #myImage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <img src="https://icon2.cleanpng.com/20240131/ar/transparent-naruto-detailed-digital-artwork-of-person-with-anime-1710891337093.webp" alt="Move me!" id="myImage">
+  </div>
+  <script>
+    const image = document.getElementById('myImage');
+    const container = document.getElementById('container');
+    let x = container.offsetWidth / 2 - image.offsetWidth / 2;
+    let y = container.offsetHeight / 2 - image.offsetHeight / 2;
+
+    document.addEventListener('keydown', (event) => {
+      const step = 10; // Movement speed
+      const containerRect = container.getBoundingClientRect();
+      const imageRect = image.getBoundingClientRect();
+
+      switch (event.key) {
+        case 'ArrowUp':
+          if (imageRect.top > containerRect.top) y -= step;
+          break;
+        case 'ArrowDown':
+          if (imageRect.bottom < containerRect.bottom) y += step;
+          break;
+        case 'ArrowLeft':
+          if (imageRect.left > containerRect.left) x -= step;
+          break;
+        case 'ArrowRight':
+          if (imageRect.right < containerRect.right) x += step;
+          break;
+      }
+
+      // Update position
+      image.style.left = `${x}px`;
+      image.style.top = `${y}px`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+  z-index: -4;
+}
+
+.main {
+  margin: 1px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.child {
+  width: 300px;
+  height: 450px;
+  border-radius: 5px;
+  margin: 2px 3px;
+  transition: all ease-in 2s;
+}
+
+.child:hover {
+  width: 300px;
+  height: 450px;
+  border-radius: 5px;
+  margin: 2px 3px;
+  transform: 1.2;
+}
+
+
+.btn{
+  padding: 2px 12px;
+  background-color: aqua;
+  scale: 2;
+  border-radius: 10px;
+}
+
+.btn:active{
+  padding: 2px 8px;
+  user-select: none;
+  background-color: aqua;
+  scale: 1.8;
+}

@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/7919bd91397683.5fea014d31396.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 3;
+}
+
+button:active{
+    scale: 0.95;
+}

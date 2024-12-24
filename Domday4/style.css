@@ -1,0 +1,126 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  overflow: hidden;
+  position: relative;
+  z-index: -4;
+}
+
+.main {
+  margin: 1px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 10;
+}
+
+.child {
+  position: relative;
+  z-index: -1;
+  width: 100px;
+  height: 90px;
+  background-color: white;
+  margin: 2px 3px;
+}
+
+.child1,
+.child2,
+.child3,
+.child4,
+.child5,
+.child6,
+.child7,
+.child8,
+.child9,
+.child10,
+.child11,
+.child12,
+.child13,
+.child14,
+.child15,
+.child16,
+.child17,
+.child18,
+.child19,
+.child20,
+.child21,
+.child22,
+.child23,
+.child24,
+.child25,
+.child26,
+.child27,
+.child28,
+.child29,
+.child30,
+.child31,
+.child32,
+.child33,
+.child34,
+.child35,
+.child36,
+.child37,
+.child38,
+.child39,
+.child40,
+.child41,
+.child42,
+.child43,
+.child44,
+.child45,
+.child46,
+.child47,
+.child48,
+.child49,
+.child50,
+.child51,
+.child52,
+.child53,
+.child54,
+.child55,
+.child56,
+.child57,
+.child58,
+.child59,
+.child60,
+.child61,
+.child62,
+.child63,
+.child64,
+.child65,
+.child66,
+.child67,
+.child68,
+.child69,
+.child70,
+.child71,
+.child72,
+.child73,
+.child74,
+.child75,
+.child76,
+.child77,
+.child78,
+.child79,
+.child80,
+.child81,
+.child82,
+.child83 {
+  position: relative;
+  z-index: -1;
+  width: 100px;
+  height: 90px;
+  background-color: white;
+  margin: 2px 3px;
+}
